@@ -1,24 +1,18 @@
 <h1 align="center">
-  ♻️ Recycling Platform
+  ♻️ Reciclon
 </h1>
 
-We are trying to raise awareness to the importance of recycling. This is a [Google Solution Challenge 2023](https://developers.google.com/community/gdsc-solution-challenge) project that uses Firebase (authentication, analytics, firestore and storage) as well as latest technologies such as React.js, Next.js, Tailwind CSS and Framer Motion to ensure best user experience. [Click here for the real-life app](https://recycling.is-important.net).
+## Características
 
-## Watch the Trailer
+- Interfaz de usuario simple y fácil de usar.
+- Datos eficientes con Firestore.
+- Autenticación de usuarios con Firebase.
+- Panel de administración.
+- Mapa de centros de reciclaje cercanos con la API de Google Maps.
+- Carga de archivos con Filepond a Firebase Storage.
+- Animaciones fluidas con Framer Motion y FormKit AutoAnimate.
 
-[![Watch the Trailer](/public/banner.png)](https://youtu.be/tBjP00O3QrU)
-
-## Features
-
-- Easy to use and simple UI.
-- Efficient data with Firestore.
-- User authentication with Firebase.
-- Admin dashboard.
-- Nearby recycling centers map with Google Maps API.
-- File upload with Filepond to Firebase Storage.
-- Smooth animations with Framer Motion and FormKit AutoAnimate.
-
-## Techstack
+## Tecnologias
 
 - React.js & Next.js
 - Tailwind CSS
@@ -26,61 +20,15 @@ We are trying to raise awareness to the importance of recycling. This is a [Goog
 - Firebase (firestore, authentication, storage, analytics)
 - PWA (native apps, offline access)
 
-## Quick start
+## Inicio rápido
 
-Make sure you have [Node.js](https://nodejs.org) and [Git](https://git-scm.com) installed on your system. Node.js comes with a package manager called `npm` but I suggest you use [`pnpm`](https://pnpm.io/) instead since it's faster and more efficient.
+Asegúrese de tener [Node.js](https://nodejs.org) y [Git](https://git-scm.com) instalados en su sistema. Node.js viene con un administrador de paquetes llamado `npm`, pero le sugiero que use [`pnpm`](https://pnpm.io/) en su lugar, ya que es más rápido y eficiente.
 
-1. Clone the repository:
-   - `git clone https://github.com/eggsy/recycling-platform`
-2. Install dependencies:
-   - `pnpm install` or `npm install`
-3. Create a Firestore account and get required fileds in `.env.example` file.
-4. Fill in the required fields and rename it to `.env.local`.
-5. Run the app:
-   - `pnpm run dev` or `npm run dev` for development mode.
-   - `<pnpm/npm> run build` and `<pnpm/npm> start` for production mode.
-
-## Team
-
-<table>
-   <tr>
-     <td align="center">
-         <a href="https://github.com/eggsy">
-            <img src="https://github.com/eggsy.png" height="125" width="125" alt="image" />
-         </a>
-     </td>
-     <td align="center">
-         <a href="https://github.com/merloss">
-           <img src="https://github.com/merloss.png" height="125" width="125" alt="image" />
-         </a>
-     </td>
-     <td align="center">
-        <img src="https://i.imgur.com/vRi5rP5.jpg" height="125" width="125" alt="image" />
-     </td>
-   </tr>
-   <tr>
-    <td align="center">
-      eggsy
-     </td>
-     <td align="center">
-      merloss
-     </td>
-     <td align="center">
-      Semih Özdaş
-     </td>
-   </tr>
-   <tr>
-    <td align="center">
-      <a href="https://eggsy.xyz">🔗</a> -
-      <a href="https://linkedin.com/in/abdulbaki-dursun">💼</a>
-     </td>
-     <td align="center">
-      <a href="https://merloss.netlify.app">🔗</a> -
-      <a href="https://linkedin.com/in/kerimkara0">💼</a>
-     </td>
-     <td align="center">
-      <a href="https://semihozdas.com.tr/">🔗</a> -
-      <a href="https://linkedin.com/in/semihozdas">💼</a>
-     </td>
-   </tr>
-</table>
+1. Clona el repositorio:
+   - `clon de git https://github.com/eggsy/recycling-platform`
+2. Instalar dependencias:
+   - `pnpm install` o `npm install`
+3. Cree una cuenta de Firestore y obtenga los archivos necesarios en el archivo `.env.local`.
+4. Ejecute la aplicación:
+   - `pnpm run dev` o `npm run dev` para el modo de desarrollo.
+   - `<pnpm/npm> run build` y `<pnpm/npm> start` para el modo de producción.

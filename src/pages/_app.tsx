@@ -196,7 +196,7 @@ export default function App({ Component, pageProps }: AppProps) {
       play();
 
       toast.success(
-        `You just recycled ${active.data.current?.item}! 🎉 ${
+        `Acabas de reciclar ${active.data.current?.item}! 🎉 ${
           !authCache.user ? "Log in to save your progress." : ""
         }`,
         {
@@ -209,7 +209,7 @@ export default function App({ Component, pageProps }: AppProps) {
   return (
     <>
       <Head>
-        <title>Importance of Recycling</title>
+        <title>Importancia del reciclaje</title>
         <meta
           name="viewport"
           content="initial-scale=1, width=device-width, shrink-to-fit=no, viewport-fit=cover"

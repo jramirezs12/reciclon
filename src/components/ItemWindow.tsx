@@ -83,12 +83,12 @@ export const ItemWindow = ({
         {item.image && <DraggableImage title={item.name} image={item.image} />}
 
         <p className="mt-0">
-          <Pill>{item.name}</Pill>take(s){" "}
+          <Pill>{item.name}</Pill>toma{" "}
           <Pill variant="red">
             <TbClock className="mr-1.5" />
             {item.decomposeTime}
           </Pill>
-          to decompose. We can protect our environment by throwing them into{" "}
+          para descomponerse. Nostros podemos proteger nuestro medio ambiente arrojando este producto en el {" "}
           <Pill variant="green">
             <TbRecycle className="mr-1.5" />
             {category}
@@ -98,7 +98,7 @@ export const ItemWindow = ({
 
         {Boolean(item.results?.length) && (
           <>
-            <h3>Environmental damage</h3>
+            <h3>Daño ambiental</h3>
 
             <ul>
               {item.results?.map((result) => (
@@ -116,7 +116,7 @@ export const ItemWindow = ({
 
         {Boolean(item.benefits?.length) && (
           <>
-            <h3>When recycled properly</h3>
+            <h3>Beneficios cuando se recicla correctamente</h3>
 
             <ul>
               {item.benefits?.map((benefit) => (

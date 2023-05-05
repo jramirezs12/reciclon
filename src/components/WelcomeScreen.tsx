@@ -28,20 +28,16 @@ export const WelcomeScreen = ({
         <MotionFade className="fixed inset-0 z-20 grid place-content-center bg-black/70">
           <div className="keep-scrolling mx-2 max-w-full rounded-lg bg-white md:m-0 md:mx-auto md:w-5/6">
             <header className="border-b border-black/10 p-4 text-xl font-bold">
-              <h2>Welcome 👋</h2>
+              <h2>Bienvenidos a Reciclon! 👋</h2>
             </header>
 
             <div className="prose prose-blue max-h-[80vh] overflow-y-auto p-4 prose-a:no-underline">
               <p>
-                Hey there! Thank you for checking our app out, we are currently
-                in beta and we continue to develop our application, please
-                report any bugs you find.
+                Este es un prototipo funcional con las funciones claves de reciclon en funcionamiento. Lo que es la ubicacion por medio de Maps, los tips de reciclaje, y el sistema de puntos.
               </p>
 
               <p>
-                We want to build a platform to show people what their everyday
-                items do to our environment if not recycled properly. Simply,
-                elegantly and accesible. You can watch our trailer here:
+                Reciclon se realizo para poder generar una concientizacion en los jovenes de una manera efectiva acerca del reciclaje:
               </p>
 
               <a

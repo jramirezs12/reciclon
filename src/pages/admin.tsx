@@ -179,7 +179,7 @@ export default function Admin() {
 
   return (
     <Layout
-      title="Admin Controls"
+      title="Controles de administrador"
       rightSide={
         <button
           className="flex items-center space-x-1 rounded-lg bg-green-600/20 px-4 py-1 text-sm font-medium text-green-600 transition-colors hover:bg-green-600/40 disabled:cursor-not-allowed disabled:bg-black/10 disabled:text-black/50"
@@ -201,7 +201,7 @@ export default function Admin() {
             <section className="flex flex-col gap-x-10 gap-y-4 md:flex-row md:items-center">
               <div className="flex flex-col gap-x-4 gap-y-2 md:flex-row md:items-center">
                 <span className="text-xs font-medium uppercase text-black/50">
-                  Add a:
+                  Agregar un(a):
                 </span>
 
                 <div className="flex gap-4">
@@ -225,7 +225,7 @@ export default function Admin() {
 
               <div className="flex flex-col gap-x-4 gap-y-2 md:flex-row md:items-center">
                 <span className="text-xs font-medium uppercase text-black/50">
-                  Or:
+                  O:
                 </span>
 
                 <div className="flex gap-4">
@@ -249,7 +249,7 @@ export default function Admin() {
             </section>
 
             <section className="space-y-2">
-              <h1 className="text-xs font-semibold uppercase">Details</h1>
+              <h1 className="text-xs font-semibold uppercase">Detalles</h1>
 
               <AnimatePresence mode="wait" initial={false}>
                 {which === "category" && <CategoryForm setData={setData} />}
@@ -292,7 +292,7 @@ const NotAuthorized = () => {
 
   return (
     <MotionFade className="fixed inset-0 z-10 flex min-h-[50vh] flex-col items-center justify-center space-y-4 rounded-lg bg-black/80 text-center text-2xl font-bold text-white md:min-h-0">
-      <span>You don{"'"}t have access to this page</span>
+      <span>No tienes acceso a esta pagina</span>
 
       <div className="flex flex-wrap items-center gap-x-4 gap-y-2">
         <button
@@ -303,7 +303,7 @@ const NotAuthorized = () => {
           onClick={() => router.replace("/")}
         >
           <TbHome />
-          <span>Go Home</span>
+          <span>Ir a casa</span>
         </button>
 
         <button
@@ -314,7 +314,7 @@ const NotAuthorized = () => {
           onClick={() => signInPopup()}
         >
           <TbLogin />
-          <span>Sign in</span>
+          <span>Ingresar</span>
         </button>
       </div>
     </MotionFade>
@@ -417,8 +417,8 @@ const CategoryForm = ({
     <MotionFade className="space-y-4 md:w-1/3">
       {edit && (
         <Select
-          label="Category"
-          placeholder="Select a category"
+          label="Categoria"
+          placeholder="Seleccionar una categoria"
           value={categoryId}
           setValue={setCategory}
           options={categories?.map((i) => ({
@@ -429,8 +429,8 @@ const CategoryForm = ({
       )}
 
       <Input
-        label="Name"
-        placeholder="Enter the category name"
+        label="Nombre"
+        placeholder="Ingrese el nombre de la categoria"
         value={name}
         setValue={setName}
       />
@@ -438,7 +438,7 @@ const CategoryForm = ({
       <FileInput
         value={image}
         setValue={setImage}
-        label={`Image ${image && "(upload to change)"}`}
+        label={`Imagen ${image && "(upload to change)"}`}
       />
     </MotionFade>
   );
@@ -525,8 +525,8 @@ const ItemForm = ({
             <Select
               value={categoryId}
               setValue={setCategory}
-              label="Category"
-              placeholder="Select a category..."
+              label="Categoria"
+              placeholder="Seleccione una categoria..."
               options={categories.map((c) => ({
                 label: c.name,
                 value: c.id,
@@ -537,7 +537,7 @@ const ItemForm = ({
               value={itemId}
               setValue={setItem}
               label="Item"
-              placeholder="Select an item..."
+              placeholder="Seleccione un item..."
               options={items?.map((c) => ({
                 label: c.name,
                 value: c.id,
@@ -547,15 +547,15 @@ const ItemForm = ({
         )}
 
         <Input
-          label="Name"
-          placeholder="Name"
+          label="Nombre"
+          placeholder="Nombre"
           value={name}
           setValue={setName}
         />
 
         <Input
-          label="Decompose Time"
-          placeholder="(e.g. 2 years)"
+          label="Tiempo de descomposicion"
+          placeholder="(e.j. 2 años)"
           value={decomposeTime}
           setValue={setDecompose}
         />
@@ -570,8 +570,8 @@ const ItemForm = ({
           <Select
             value={categoryId}
             setValue={setCategory}
-            label="Category"
-            placeholder="Select a category..."
+            label="Categoria"
+            placeholder="Seleccionar una categoria..."
             options={categories.map((c) => ({
               label: c.name,
               value: c.id,
@@ -581,17 +581,17 @@ const ItemForm = ({
       </section>
 
       <InputGroup
-        label="Environmental damage"
+        label="Daño ambiental"
         value={results}
         setValue={setResults}
-        placeholder="(e.g. Water and air pollution.)"
+        placeholder="(e.j. Agua y polucion de aire.)"
       />
 
       <InputGroup
-        label="When recycled properly"
+        label="Beneficios de reciclaje"
         value={benefits}
         setValue={setBenefits}
-        placeholder="(e.g. Saves energy.)"
+        placeholder="(e.j. Ahorra energia.)"
       />
     </MotionFade>
   );

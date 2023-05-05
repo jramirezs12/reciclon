@@ -11,19 +11,19 @@ import { toast } from "sonner";
 
 const links = [
   {
-    label: "How to Recycle",
+    label: "Como reciclar?",
     href: "/how",
   },
   {
-    label: "Nearby Recycling Centers",
+    label: "Puntos Cercanos De Reciclaje",
     href: "/map",
   },
   {
-    label: "Scoreboard",
+    label: "Tabla De Puntuacion",
     href: "/scoreboard",
   },
   {
-    label: "About",
+    label: "Acerca De",
     href: "/about",
   },
 ];

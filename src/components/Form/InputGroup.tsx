@@ -62,7 +62,7 @@ export const InputGroup = ({
       </div>
 
       <span className="mt-2 block text-center text-xs text-black/30">
-        press enter to add more
+        Presiona enter para agregar mas
       </span>
     </div>
   );

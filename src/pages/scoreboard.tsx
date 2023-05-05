@@ -11,7 +11,7 @@ export default function Scoreboard() {
   const [scores] = useAtom(scoresAtom);
 
   return (
-    <Layout title="Scoreboard" mainClass="grid md:grid-cols-3 gap-4">
+    <Layout title="Tabla De Puntuacion" mainClass="grid md:grid-cols-3 gap-4">
       {scores.length === 0 && (
         <span className="block text-black/50 md:col-span-3">
           No one has found out about the game yet!

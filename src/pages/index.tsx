@@ -63,8 +63,8 @@ export default function Home() {
         <div className="flex items-center rounded-t-lg border-b border-black/10 bg-white/70 backdrop-blur-md">
           <TbSearch className="ml-4 text-lg text-black/50" />
           <input
-            placeholder={`Search ${
-              !categories.selectedCategoryId ? "a category" : "an item"
+            placeholder={`Buscar ${
+              !categories.selectedCategoryId ? "una categoria" : "un item"
             }...`}
             className="w-full rounded-t-lg bg-white/70 px-4 py-3 text-black outline-none"
             value={search}

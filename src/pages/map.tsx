@@ -75,7 +75,7 @@ export default function MapPage() {
       (results, status) => {
         if (results?.length === 0) {
           toast.error(
-            "Couldn't find any recycling centres in 10 kilometers radius."
+            "No hay puntos de reciclaje en un radio de 1 km."
           );
           return;
         }
@@ -111,7 +111,7 @@ export default function MapPage() {
   };
 
   return (
-    <Layout title="Nearby Recycling Centers" padding={false} grow>
+    <Layout title="Puntos Cercanos De Reciclaje" padding={false} grow>
       {!loading && !Boolean(coords.latitude) && (
         <div className="p-6 text-black/50">
           ⛔ Make sure you have given us permission to access your location (we
