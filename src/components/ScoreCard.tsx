@@ -25,7 +25,7 @@ export const ScoreCard = ({ displayName, avatar, score, isAdmin }: IUser) => {
           {isAdmin && (
             <div
               className="rounded-lg bg-brand/20 px-3 py-1"
-              title="This man is a living legend"
+              title="Este tipo es una leyenda, es el top de la universidad"
             >
               <FaCrown size={16} className="text-brand" />
             </div>
